@@ -4,10 +4,10 @@ import com.ngobach.jukebox.web.start
 import org.slf4j.Logger
 import org.slf4j.LoggerFactory
 
-val logger: Logger = LoggerFactory.getLogger("Main")
+val PackageName = ::main.javaClass.packageName ?: "jukebox"
+val AppLogger: Logger = LoggerFactory.getLogger(PackageName)
 
 fun main() {
-    println("Port = ${AppConfig[AppSpec.port]}")
     start()
-    logger.info("Web server is started")
+    AppLogger.info("Web server is started")
 }

@@ -5,6 +5,9 @@ import io.ktor.response.*
 import io.ktor.routing.*
 
 fun Route.withApi() {
+    get("/") {
+        call.respondText("Jukebox")
+    }
     get("/status") {
         call.respond(mapOf(
             "status" to "OK"

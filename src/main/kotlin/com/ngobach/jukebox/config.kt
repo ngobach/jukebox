@@ -12,3 +12,4 @@ object AppSpec : ConfigSpec("jukebox") {
 val AppConfig = Config { addSpec(AppSpec) }
     .from.yaml.resource("application.yaml")
     .from.yaml.file("application.yaml", true)
+    .from.properties.file("application.properties", true)
