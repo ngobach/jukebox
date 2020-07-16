@@ -1,5 +1,6 @@
 package com.ngobach.jukebox.web
 
+import com.ngobach.jukebox.data.DB
 import io.ktor.application.*
 import io.ktor.response.*
 import io.ktor.routing.*
